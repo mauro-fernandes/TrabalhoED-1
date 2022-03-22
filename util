@@ -1,0 +1,51 @@
+
+# test inputs:
+"""
+add 1
+crypto ---
+add 2
+crypto -+-
+merge [1, 3] [3, 4] [5, 8] [6, 10]
+add 1
+deYodafy contra-atacar deve Império!
+add 1
+merge [1, 3] [6, 10] [3, 4] [5, 8]
+add 2
+crypto +-+-
+merge [1, 3] [6, 10] [3, 4] [5, 8]
+add 1
+deYodafy faça não ou faça.
+add 2
+crypto -+-
+merge [1, 7] [2, 5] [5, 10] [8, 9]
+"""
+
+
+
+
+
+
+
+
+
+
+
+
+'''
+from re import split
+
+def split_string(string, delimiters):
+    """Splits a string by a list of delimiters.
+    Args:
+        string (str): string to be split
+        delimiters (list): list of delimiters
+    Returns:
+        list: list of split strings
+    """
+    pattern = r'|'.join(delimiters)
+    return split(pattern, string)
+
+sample_string = 'hi! my name is nik, welcome; to datagy'
+new_string = split_string(sample_string, [' ',',',';','!'])
+print(new_string)
+'''
